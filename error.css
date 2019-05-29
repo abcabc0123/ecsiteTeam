@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+.error,.warning,.sserror {
+   width:90%;
+   height:auto;
+   margin:0 auto;
+   margin-top:1%;
+   padding-top:1%;
+   padding-bottom:1%;
+   text-align:center;
+   border:1px solid #00529B;
+   color: #00529B;
+   background-color:#BDE5F8;
+}
+
+.warning{
+   border:1px solid #D8000C;
+   color: #D8000C;
+   background-color:#FFBABA;
+}
+
+.sserror{
+   width:87%;
+   padding-left:3%;
+   text-align:left;
+}
+
+#errorh1{
+	margin-left:5%;
+	text-align:left;
+	padding-left:3%;
+}
