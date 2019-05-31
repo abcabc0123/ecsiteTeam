@@ -13,7 +13,6 @@ import com.opensymphony.xwork2.ActionSupport;
 public class PurchaseHistoryAction extends ActionSupport implements SessionAware {
 
 	private Map<String,Object>session;
-	private String errorMessage;
 	private PurchaseHistoryInfoDAO purchaseHistoryDAO = new PurchaseHistoryInfoDAO();
 	private List<PurchaseHistoryInfoDTO> historyList = new ArrayList<PurchaseHistoryInfoDTO>();
 
@@ -34,14 +33,6 @@ public class PurchaseHistoryAction extends ActionSupport implements SessionAware
 	@Override
 	public void setSession(Map<String,Object>session){
 		this.session = session;
-	}
-
-	public String getErrorMessage(){
-		return errorMessage;
-	}
-
-	public void setErrorMessage(String errorMessage){
-		this.errorMessage = errorMessage;
 	}
 
 	public List<PurchaseHistoryInfoDTO> getHistoryList(){
